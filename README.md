@@ -107,5 +107,4 @@ py .\main.py
 
 ## Notes
 
-- `schema.sql` exists but is currently empty.
 - Re-running the pipeline rebuilds the target table each run (first chunk uses `replace`).
