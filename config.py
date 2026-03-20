@@ -1,5 +1,4 @@
 RAW_FILE_PATH = "baseball.csv"
-SAMPLE_FILE_PATH = "sample_data.csv"
 DB_PATH = "baseball.db"
 TABLE_NAME = "baseball_stats"
 LOG_FILE_PATH = "logs/pipeline.log"
@@ -16,7 +15,6 @@ COLUMNS_TO_KEEP = [
 class Config:
     def __init__(self):
         self.csv_file_path = RAW_FILE_PATH
-        self.sample_file_path = SAMPLE_FILE_PATH
         self.database_path = DB_PATH
         self.table_name = TABLE_NAME
         self.log_file_path = LOG_FILE_PATH

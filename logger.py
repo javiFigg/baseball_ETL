@@ -19,6 +19,12 @@ if not logger.handlers:
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 
+    # Mirror logs to console so progress is visible while the pipeline runs.
+    stream_handler = logging.StreamHandler()
+    stream_handler.setLevel(logging.INFO)
+    stream_handler.setFormatter(formatter)
+    logger.addHandler(stream_handler)
+
 
 def get_logger() -> logging.Logger:
     return logger
